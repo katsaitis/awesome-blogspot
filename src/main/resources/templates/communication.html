@@ -25,24 +25,27 @@
 
 
   <main>
-    <div class="card" id="title1">
-        <h1>Τα πάντα για τη μουσική, ή και όχι!!</h1>
-      </div>
-
+    <h3>Φόρμα Επικοινωνίας</h3>
     <div class="row" id="posts">
-      <div class="leftcolumn" id="lc">
-        <div class="card">
-          <h2 id="title2">
+        <div class="leftcolumn" id="lc">
+            <div class="container" id="form">
+                <form action="/action_page.php">
+                    <label for="name">Όνοματεπώνυμο</label>
+                    <input type="text" id="name" placeholder="Your name..">
 
-          </h2>
-          <p id="timestamp"><a id="author"></a></p>
-          <p id="text"></p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your last name..">
+
+                    
+
+                    <label for="subject">Τι έχεις να μας προσάψεις;</label>
+                    <textarea id="subject" name="subject" placeholder="Πες τα εδώ.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Στείλε">
+                </form>
+            </div>
         </div>
-
-        
-  
-
-      </div>
+    
 
       <div class="rightcolumn" id="rc">
         <div class="card" id="description">

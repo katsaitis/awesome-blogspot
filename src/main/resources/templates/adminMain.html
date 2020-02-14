@@ -31,12 +31,20 @@
 
     <div class="row" id="posts">
       <div class="leftcolumn" id="lc">
+        <form action="/action_page.php">
+            <label for="subject">Δημιούργησε post</label>
+            <textarea id="postarea" name="subject" placeholder="Γράψε την εξυπνάδα σου..." style="height:200px"></textarea>
+
+            <input type="submit" value="post">
+        </form>
         <div class="card">
           <h2 id="title2">
 
           </h2>
           <p id="timestamp"><a id="author"></a></p>
           <p id="text"></p>
+          <button id="del" >Edit</button>
+          <button id="edit" >Delete</button>
         </div>
 
         
