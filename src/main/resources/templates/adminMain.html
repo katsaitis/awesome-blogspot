@@ -35,7 +35,7 @@
             <label for="subject">Δημιούργησε post</label>
             <textarea id="postarea" name="subject" placeholder="Γράψε την εξυπνάδα σου..." style="height:200px"></textarea>
 
-            <input type="submit" value="post">
+            <input id="postButton" type="submit" value="post">
         </form>
         <div class="card">
           <h2 id="title2">
@@ -43,8 +43,8 @@
           </h2>
           <p id="timestamp"><a id="author"></a></p>
           <p id="text"></p>
-          <button id="del" >Edit</button>
-          <button id="edit" >Delete</button>
+          <button id="deleteButton" >Edit</button>
+          <button id="editButton" >Delete</button>
         </div>
 
         
@@ -89,4 +89,8 @@
       Copyright &copy; mai19017
   </footer>
   </body>
+  <script src="../static/js/awesome_blogspot.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 </html>
