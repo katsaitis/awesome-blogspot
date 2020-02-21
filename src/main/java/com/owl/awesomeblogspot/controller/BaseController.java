@@ -13,7 +13,6 @@ public class BaseController {
 
     @GetMapping("/")
     public String getIndex() {
-        LOGGER.info("now serving index!");
         return "index";
     }
 
