@@ -9,7 +9,7 @@ public class AwesomeBlogspotApplication {
     /**
      * Main class of the application
      * @param args the arguments we wish to use for the app execution
-     * @return voi
+     *
      */
 	public static void main(String[] args) {
 		SpringApplication.run(AwesomeBlogspotApplication.class, args);
