@@ -8,11 +8,11 @@ public class AwesomeBlogspotApplication {
 
     /**
      * Main class of the application
-     * @param args the arguments we wish to use for the app execution
      *
+     * @param args the arguments we wish to use for the app execution
      */
-	public static void main(String[] args) {
-		SpringApplication.run(AwesomeBlogspotApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(AwesomeBlogspotApplication.class, args);
+    }
 
 }
