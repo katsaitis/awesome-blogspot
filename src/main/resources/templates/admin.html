@@ -30,11 +30,12 @@
 
     <div class="row" id="posts">
       <div class="leftcolumn" id="lc">
-        <form action="/action_page.php">
-          <label for="subject">Δημιούργησε post</label>
-          <textarea id="postarea" name="subject" placeholder="Γράψε την εξυπνάδα σου..." style="height:200px"></textarea>
-
-          <input id="postButton" type="submit" value="post">
+        <form action="/admin/post" method="post" id="adminForm">
+          <label for="title">Τίτλος</label>
+          <input id="title" type="text" name="title">
+          <label for="body">Κείμενο</label>
+          <textarea id="body" name="body" placeholder="Γράψε την εξυπνάδα σου..." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
         </form>
         <div class="card">
           <h2 id="title2">
