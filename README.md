@@ -1,6 +1,7 @@
 # awesome-blogspot
 How to run:
 
+0) Create a mysql database named "blogspot" and enter the username and password values in the appropriate "application.properties" fields.
 1) Open the project in intellij (or your prefer IDE)
 2) Enable maven auto import (so all dependencies are downloaded automatically)
 3) Run class src/main/java/com/owl/awesomeblogspot/AwesomeBlogspotApplication.java

@@ -1,9 +1,11 @@
 $(function () {
 
-  $("#communicationButton").click(function () {
-    $(this).hide();
+  checkIfAuthenticated().then((isAuth)=> {
+    if (isAuth){
+      //change login button to "admin button"
+      $('#log').html('Admin').attr('href', 'admin/index')
+    }
   });
-
 
   $("#postButton").click(function () {
 
@@ -21,16 +23,14 @@ $(function () {
 
   });
 
-  $("#editButton").click(function () {
-
-  });
-
-  $("#loginButton").click(function () {
-
-  });
-
-  $("#loginButton").click(function () {
-
-  });
-
 });
+
+function checkIfAuthenticated() {
+  return $.ajax({
+    method: 'GET',
+    url: '/isAuthenticated',
+    success: function (res) {
+      return res;
+    }
+  })
+}
