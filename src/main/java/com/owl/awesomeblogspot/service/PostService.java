@@ -5,7 +5,11 @@ import java.util.List;
 
 public interface PostService {
 
-    public List<Post> getAllPosts();
+    List<Post> getAllPosts();
 
-    public Post findById(Long id);
+    Post findById(Long id);
+
+    void createPost(String title, String body);
+
+    void editPost(Long postId, String title, String body);
 }

@@ -28,6 +28,15 @@ public class Post {
     @Temporal(TemporalType.DATE)
     private Date createdAt;
 
+    public Post(){
+        this.createdAt = new Date();
+    }
+
+    public Post(String title, String body) {
+        this.title = title;
+        this.body = body;
+        this.createdAt = new Date();
+    }
     public String getTitle() {
         return title;
     }

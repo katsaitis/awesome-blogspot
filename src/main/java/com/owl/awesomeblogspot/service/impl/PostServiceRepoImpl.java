@@ -28,4 +28,19 @@ public class PostServiceRepoImpl implements PostService {
         // Hurray for functional
         return _postRepository.findById(id).orElseThrow(EntityNotFoundException::new);
     }
+
+    @Override
+    public void createPost(String title, String body) {
+        Post post = new Post(title,body);
+        _postRepository.save(post);
+    }
+
+    @Override
+    public void editPost(Long postId, String title, String body) {
+        Post post = _postRepository.findById(postId).orElseThrow(EntityNotFoundException::new);
+        post.setTitle(title);
+        post.setBody(body);
+        _postRepository.save(post);
+    }
+
 }

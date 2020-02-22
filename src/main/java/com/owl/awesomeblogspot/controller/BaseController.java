@@ -11,9 +11,15 @@ public class BaseController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BaseController.class);
 
-    @GetMapping("/")
+    @GetMapping(value = {"", "/"})
     public String getIndex() {
         return "index";
     }
+
+    @GetMapping("/contact")
+    public String getContactPage() {
+        return "communication";
+    }
+
 
 }
