@@ -31,7 +31,13 @@ public class PostController {
     }
 
     @GetMapping("/post/{id}")
-    public Post getPost(@PathVariable Long id) {
+    public String getPost(@PathVariable Long id) {
+        return "show";
+    }
+
+    @GetMapping("/post/{id}/data")
+    @ResponseBody
+    public Post getPostData(@PathVariable Long id) {
         return _postService.findById(id);
     }
 }

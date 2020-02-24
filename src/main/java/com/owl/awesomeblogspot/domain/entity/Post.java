@@ -1,14 +1,7 @@
 package com.owl.awesomeblogspot.domain.entity;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -22,13 +15,14 @@ public class Post {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "body")
+    @Lob
+    @Column(name="body")
     private String body;
 
     @Temporal(TemporalType.DATE)
     private Date createdAt;
 
-    public Post(){
+    public Post() {
         this.createdAt = new Date();
     }
 
@@ -37,6 +31,11 @@ public class Post {
         this.body = body;
         this.createdAt = new Date();
     }
+
+    public Long getId() {
+        return id;
+    }
+
     public String getTitle() {
         return title;
     }

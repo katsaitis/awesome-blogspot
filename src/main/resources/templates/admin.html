@@ -1,91 +1,92 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Awesome Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesome Blog</title>
 
-  <link rel="stylesheet" href="/css/awesome_blogspot.css">
+    <link rel="stylesheet" href="/css/awesome_blogspot.css">
 
 </head>
 <body>
 <div class="container" id="page">
-  <header>
-    <h2>Awesome Blog</h2>
-  </header>
+    <header>
+        <h2>Awesome Blog</h2>
+    </header>
 
-  <div class="panel" id="navbar">
-    <nav>
-      <a id="main" href="/">Αρχική</a>
-      <a id="com" href="/contact">Επικοινωνία</a>
-      <a id="logout" href="/logout">Έξοδος</a>
-    </nav>
-  </div>
-
-
-  <main>
-    <div class="card" id="title1">
-      <h1>Γράψε ένα post!!</h1>
+    <div class="panel" id="navbar">
+        <nav>
+            <a id="main" href="/">Αρχική</a>
+            <a id="com" href="/contact">Επικοινωνία</a>
+            <a id="logout" href="/logout">Έξοδος</a>
+        </nav>
     </div>
 
-    <div class="row" id="posts">
-      <div class="leftcolumn" id="lc">
-        <form action="/admin/post" method="post" id="adminForm">
-          <label for="title">Τίτλος</label>
-          <input id="title" type="text" name="title">
-          <label for="body">Κείμενο</label>
-          <textarea id="body" name="body" placeholder="Γράψε την εξυπνάδα σου..." style="height:200px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-        <div class="card">
-          <h2 id="title2">
 
-          </h2>
-          <p id="timestamp"><a id="author"></a></p>
-          <p id="text"></p>
-          <button id="deleteButton">Edit</button>
-          <button id="editButton">Delete</button>
+    <main>
+        <div class="card" id="title1">
+            <h1>Γράψε ένα post!!</h1>
         </div>
 
+        <div class="row" id="posts">
+            <div class="leftcolumn" id="lc">
+                <form action="/admin/post" method="post" id="adminForm">
+                    <label for="title">Τίτλος</label>
+                    <input id="title" type="text" name="title">
+                    <label for="body">Κείμενο</label>
+                    <textarea id="body" name="body" placeholder="Γράψε την εξυπνάδα σου..."
+                              style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="card">
+                    <h2 id="title2">
 
-      </div>
-
-      <div class="rightcolumn" id="rc">
-        <div class="card" id="description">
-          <h4>About us</h4>
-          <p>Στόχος της σελίδας είναι να ψυχαγωγήσει τις ρεμπέτικες ψυχές!</p>
-        </div>
-        <div class="card" id="befores">
-          <h4>Παλιότερα</h4>
-          <ol>
-
-            <li><a href="#">February 2020</a></li>
-            <li><a href="#">January 2020</a></li>
-            <li><a href="#">December 2019</a></li>
-            <li><a href="#">November 2019</a></li>
-            <li><a href="#">October 2019</a></li>
-            <li><a href="#">September 2019</a></li>
-            <li><a href="#">August 2019</a></li>
-            <li><a href="#">July 2019</a></li>
-            <li><a href="#">June 2019</a></li>
-            <li><a href="#">May 2019</a></li>
-            <li><a href="#">April 2019</a></li>
-            <li><a href="#">March 2019</a></li>
-
-          </ol>
-        </div>
+                    </h2>
+                    <p id="timestamp"><a id="author"></a></p>
+                    <p id="text"></p>
+                    <button id="deleteButton">Edit</button>
+                    <button id="editButton">Delete</button>
+                </div>
 
 
-      </div><!-- /.blog-sidebar -->
+            </div>
 
-    </div><!-- /.row -->
+            <div class="rightcolumn" id="rc">
+                <div class="card" id="description">
+                    <h4>About us</h4>
+                    <p>Στόχος της σελίδας είναι να ψυχαγωγήσει τις ρεμπέτικες ψυχές!</p>
+                </div>
+                <div class="card" id="befores">
+                    <h4>Παλιότερα</h4>
+                    <ol>
+
+                        <li><a href="#">February 2020</a></li>
+                        <li><a href="#">January 2020</a></li>
+                        <li><a href="#">December 2019</a></li>
+                        <li><a href="#">November 2019</a></li>
+                        <li><a href="#">October 2019</a></li>
+                        <li><a href="#">September 2019</a></li>
+                        <li><a href="#">August 2019</a></li>
+                        <li><a href="#">July 2019</a></li>
+                        <li><a href="#">June 2019</a></li>
+                        <li><a href="#">May 2019</a></li>
+                        <li><a href="#">April 2019</a></li>
+                        <li><a href="#">March 2019</a></li>
+
+                    </ol>
+                </div>
 
 
-  </main><!-- /.container -->
+            </div><!-- /.blog-sidebar -->
 
-  <footer class="blog-footer" id="we">
-    Copyright &copy; mai19017
-  </footer>
+        </div><!-- /.row -->
+
+
+    </main><!-- /.container -->
+
+    <footer class="blog-footer" id="we">
+        Copyright &copy; mai19017
+    </footer>
 </div>
 </body>
 <script src="/webjars/jquery/1.9.1/jquery.min.js"></script>

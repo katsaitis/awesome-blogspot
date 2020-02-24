@@ -19,13 +19,13 @@ header {
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-#lc {
+.leftcolumn {
     float: left;
     width: 75%;
 }
 
 /* Right column */
-#rc {
+.rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
