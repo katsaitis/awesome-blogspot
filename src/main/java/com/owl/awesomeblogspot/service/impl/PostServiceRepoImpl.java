@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class PostServiceRepoImpl implements PostService {
@@ -24,9 +25,9 @@ public class PostServiceRepoImpl implements PostService {
     }
 
     @Override
-    public Post findById(Long id) {
+    public Optional<Post> findById(Long id) {
         // Hurray for functional
-        return _postRepository.findById(id).orElseThrow(EntityNotFoundException::new);
+        return _postRepository.findById(id);
     }
 
     @Override

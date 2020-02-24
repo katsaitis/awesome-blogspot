@@ -2,12 +2,13 @@ package com.owl.awesomeblogspot.service;
 
 import com.owl.awesomeblogspot.domain.entity.Post;
 import java.util.List;
+import java.util.Optional;
 
 public interface PostService {
 
     List<Post> getAllPosts();
 
-    Post findById(Long id);
+    Optional<Post> findById(Long id);
 
     void createPost(String title, String body);
 

@@ -40,4 +40,8 @@ public class Comment {
     public void setCreatedAt() {
         this.createdAt = new Date();
     }
+
+    public void setPost(Post post) {
+        this.post = post;
+    }
 }

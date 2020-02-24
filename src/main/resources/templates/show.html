@@ -1,71 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Awesome Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesome Blog</title>
 
-  <link rel="stylesheet" href="/css/awesome_blogspot.css">
+    <link rel="stylesheet" href="/css/awesome_blogspot.css">
 
 </head>
 <body>
 <div class="container" id="page">
-  <header>
-    <h2>Awesome Blog</h2>
-  </header>
+    <header>
+        <h2>Awesome Blog</h2>
+    </header>
 
-  <div class="panel" id="navbar">
-    <nav>
-      <a id="main" href="/">Αρχική</a>
-      <a id="com" href="/contact">Επικοινωνία</a>
-      <a id="log" href="admin/login">Είσοδος</a>
-    </nav>
-  </div>
-
-
-  <main>
-    <h3></h3>
-    <div class="row" id="posts">
-      <div class="leftcolumn" id="showPost">
-      </div>
+    <div class="panel" id="navbar">
+        <nav>
+            <a id="main" href="/">Αρχική</a>
+            <a id="com" href="/contact">Επικοινωνία</a>
+            <a id="log" href="admin/login">Είσοδος</a>
+        </nav>
+    </div>
 
 
-      <div class="rightcolumn" id="rc">
-        <div class="card" id="description">
-          <h4>About us</h4>
-          <p>Στόχος της σελίδας είναι να ψυχαγωγήσει τις ρεμπέτικες ψυχές!</p>
-        </div>
-        <div class="card" id="befores">
-          <h4>Παλιότερα</h4>
-          <ol>
+    <main>
+        <h3></h3>
+        <div class="row" id="posts">
+            <div class="leftcolumn" id="showPost">
+                <div id="comments"></div>
+                <div id="submit_comment" style="margin-top:10px">
+                    <form>
+                        <label for="name">Nickname</label>
+                        <input type="text" id="name" name="fullname" placeholder="Your name..">
+                        <label for="title">Γραψε το σχόλιο σου:</label>
+                        <textarea id="title" name="title" placeholder="Πες τα εδώ.."
+                                  style="height:100px"></textarea>
+                        <input id="communicationButton" type="submit" value="Στείλε">
+                    </form>
+                </div>
+            </div>
 
-            <li><a href="#">February 2020</a></li>
-            <li><a href="#">January 2020</a></li>
-            <li><a href="#">December 2019</a></li>
-            <li><a href="#">November 2019</a></li>
-            <li><a href="#">October 2019</a></li>
-            <li><a href="#">September 2019</a></li>
-            <li><a href="#">August 2019</a></li>
-            <li><a href="#">July 2019</a></li>
-            <li><a href="#">June 2019</a></li>
-            <li><a href="#">May 2019</a></li>
-            <li><a href="#">April 2019</a></li>
-            <li><a href="#">March 2019</a></li>
+            <div class="rightcolumn" id="rc">
+                <div class="card" id="description">
+                    <h4>About us</h4>
+                    <p>Στόχος της σελίδας είναι να ψυχαγωγήσει τις ρεμπέτικες ψυχές!</p>
+                </div>
+                <div class="card" id="befores">
+                    <h4>Παλιότερα</h4>
+                    <ol>
 
-          </ol>
-        </div>
+                        <li><a href="#">February 2020</a></li>
+                        <li><a href="#">January 2020</a></li>
 
-
-      </div><!-- /.blog-sidebar -->
-
-    </div><!-- /.row -->
+                    </ol>
+                </div>
 
 
-  </main><!-- /.container -->
+            </div><!-- /.blog-sidebar -->
 
-  <footer class="blog-footer" id="we">
-    Copyright &copy; mai19017
-  </footer>
+        </div><!-- /.row -->
+
+
+    </main><!-- /.container -->
+
+    <footer class="blog-footer" id="we">
+        Copyright &copy; mai19017
+    </footer>
 </div>
 </body>
 

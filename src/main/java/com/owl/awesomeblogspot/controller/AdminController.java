@@ -17,12 +17,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class AdminController {
 
     private final PostService _postService;
-    private final ObjectMapper _mapper;
     private static final Logger LOGGER = LoggerFactory.getLogger(AdminController.class);
 
-    public AdminController(@Autowired PostService postService, @Autowired ObjectMapper objectMapper) {
+    public AdminController(@Autowired PostService postService) {
         this._postService = postService;
-        this._mapper = objectMapper;
     }
 
     @GetMapping("/login")
@@ -36,10 +34,9 @@ public class AdminController {
     }
 
     @PostMapping("/post")
-    @ResponseBody
     public String createPost(@RequestParam(value = "title") String title, @RequestParam(value = "body") String body) {
         _postService.createPost(title, body);
-        return "Successfully created post";
+        return "redirect:/";
     }
 
 }

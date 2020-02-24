@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 @Controller
@@ -38,6 +40,6 @@ public class PostController {
     @GetMapping("/post/{id}/data")
     @ResponseBody
     public Post getPostData(@PathVariable Long id) {
-        return _postService.findById(id);
+        return _postService.findById(id).orElseThrow(EntityNotFoundException::new);
     }
 }
